@@ -60,16 +60,7 @@ import {
                   value={paymentMethod}
                   onChange={(e) => setPaymentMethod(e.target.value)}
                 >
-                  <FormControlLabel
-                    label="PayPal"
-                    value="PayPal"
-                    control={<Radio />}
-                  ></FormControlLabel>
-                  <FormControlLabel
-                    label="Stripe"
-                    value="Stripe"
-                    control={<Radio />}
-                  ></FormControlLabel>
+       
                   <FormControlLabel
                     label="Cash"
                     value="Cash"

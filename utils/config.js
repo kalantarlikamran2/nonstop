@@ -1,8 +1,8 @@
 const config = {
-    projectId: 'wkgw7wfe',
+    projectId: 'vjvxuhpc',
     dataset: 'production',
   };
-  export default config;
+  export default config;  
 
 
   
