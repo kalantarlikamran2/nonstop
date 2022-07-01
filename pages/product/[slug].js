@@ -7,8 +7,7 @@ import {
     Grid,
     Link,
     List,
-    ListItem,
-    Rating,
+    ListItem, 
     Typography,
   } from '@mui/material';
   import Image from 'next/image';

@@ -4,8 +4,7 @@ import {
     CardActionArea,
     CardActions,
     CardContent,
-    CardMedia,
-    Rating,
+    CardMedia, 
     Typography,
   } from '@mui/material';
   import NextLink from 'next/link';
