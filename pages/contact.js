@@ -1,21 +1,15 @@
- 
 import React from 'react'; 
-import Layout from '../components/Layout'; 
- 
-
+import Layout from '../components/Layout';  
 export default function ContactScreen() {
  
   return (
-    <Layout title="Shipping Address">  
-<>
-  <title>Contact</title>
-  {/* Required meta tags */}
+    <Layout title="Shipping Address">   
+  <title>Contact</title> 
   <meta charSet="utf-8" />
   <meta
     name="viewport"
     content="width=device-width, initial-scale=1, shrink-to-fit=no"
-  />
-  {/* Bootstrap CSS */}
+  /> 
   <link
     rel="stylesheet"
     href=""
@@ -73,10 +67,7 @@ GitHub is a remote-first company with offices located throughout the US, Europe,
         </div>
       </div>
     </div>
-  </div>
-  {/* Optional JavaScript */}
-  {/* jQuery first, then Popper.js, then Bootstrap JS */}
-</>
+  </div> 
 
     </Layout>
   );

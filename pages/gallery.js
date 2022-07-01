@@ -1,11 +1,6 @@
-
- 
 import React, { useContext, useEffect } from 'react'; 
-import Layout from '../components/Layout'; 
- 
-
-export default function ShippingScreen() {
- 
+import Layout from '../components/Layout';  
+export default function ShippingScreen() { 
   return (
     <Layout title="Shipping Address">  
   <head>
@@ -14,8 +9,7 @@ export default function ShippingScreen() {
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
- 
+    /> 
     <link
       rel="stylesheet"
       href=""
@@ -26,8 +20,7 @@ export default function ShippingScreen() {
   <body>
     <div class="container my-3 my-sm-5">
       <h1 class="mb-sm-4 text-center">Gallery Doors</h1>
-      <p class="lead text-center">
-   
+      <p class="lead text-center"> 
       </p>
  
       <div class="row">
@@ -38,8 +31,7 @@ export default function ShippingScreen() {
                 src="images/1.jpg"
                 class="figure-img img-fluid img-thumbnail"
                 alt="Figure image"
-            /></a>
- 
+            /></a> 
           </figure>
         </div>
         <div class="col-12 col-md-6 col-lg-4">
@@ -49,8 +41,7 @@ export default function ShippingScreen() {
                 src="images/2.jpg"
                 class="figure-img img-fluid img-thumbnail"
                 alt="Figure image"
-            /></a>
- 
+            /></a> 
           </figure>
         </div>
         <div class="col-12 col-md-6 col-lg-4">
@@ -60,8 +51,7 @@ export default function ShippingScreen() {
                 src="images/3.jpg"
                 class="figure-img img-fluid img-thumbnail"
                 alt="Figure image"
-            /></a>
- 
+            /></a> 
           </figure>
         </div>
         <div class="col-12 col-md-6 col-lg-4">
@@ -71,8 +61,7 @@ export default function ShippingScreen() {
                 src="images/4.jpg"
                 class="figure-img img-fluid img-thumbnail"
                 alt="Figure image"
-            /></a>
- 
+            /></a> 
           </figure>
         </div>
         <div class="col-12 col-md-6 col-lg-4">
@@ -82,8 +71,7 @@ export default function ShippingScreen() {
                 src="images/5.jpg"
                 class="figure-img img-fluid img-thumbnail"
                 alt="Figure image"
-            /></a>
- 
+            /></a> 
           </figure>
         </div>
         <div class="col-12 col-md-6 col-lg-4">
@@ -93,8 +81,7 @@ export default function ShippingScreen() {
                 src="images/6.jpg"
                 class="figure-img img-fluid img-thumbnail"
                 alt="Figure image"
-            /></a>
- 
+            /></a> 
           </figure>
         </div>
         <div class="col-12 col-md-6 col-lg-4">
@@ -104,8 +91,7 @@ export default function ShippingScreen() {
                 src="images/7.jpg"
                 class="figure-img img-fluid img-thumbnail"
                 alt="Figure image"
-            /></a>
- 
+            /></a> 
           </figure>
         </div>
         <div class="col-12 col-md-6 col-lg-4">
@@ -115,8 +101,7 @@ export default function ShippingScreen() {
                 src="images/8.jpg"
                 class="figure-img img-fluid img-thumbnail"
                 alt="Figure image"
-            /></a>
- 
+            /></a> 
           </figure>
         </div>
         <div class="col-12 col-md-6 col-lg-4">
@@ -126,8 +111,7 @@ export default function ShippingScreen() {
                 src="images/9.png"
                 class="figure-img img-fluid img-thumbnail"
                 alt="Figure image"
-            /></a>
- 
+            /></a> 
           </figure>
         </div>
         <div class="col-12 col-md-6 col-lg-4">
@@ -137,8 +121,7 @@ export default function ShippingScreen() {
                 src="images/10.jpg"
                 class="figure-img img-fluid img-thumbnail"
                 alt="Figure image"
-            /></a>
- 
+            /></a> 
           </figure>
         </div>
         <div class="col-12 col-md-6 col-lg-4">
@@ -148,8 +131,7 @@ export default function ShippingScreen() {
                 src="images/11.jpg"
                 class="figure-img img-fluid img-thumbnail"
                 alt="Figure image"
-            /></a>
- 
+            /></a> 
           </figure>
         </div>
         <div class="col-12 col-md-6 col-lg-4">
@@ -159,8 +141,7 @@ export default function ShippingScreen() {
                 src="images/12.jpg"
                 class="figure-img img-fluid img-thumbnail"
                 alt="Figure image"
-            /></a>
- 
+            /></a> 
           </figure>
         </div>
         <div class="col-12 col-md-6 col-lg-4">
@@ -170,8 +151,7 @@ export default function ShippingScreen() {
                 src="images/13.jpg"
                 class="figure-img img-fluid img-thumbnail"
                 alt="Figure image"
-            /></a>
- 
+            /></a> 
           </figure>
         </div>
         <div class="col-12 col-md-6 col-lg-4">
@@ -181,8 +161,7 @@ export default function ShippingScreen() {
                 src="images/14.jpg"
                 class="figure-img img-fluid img-thumbnail"
                 alt="Figure image"
-            /></a>
- 
+            /></a> 
           </figure>
         </div>
         <div class="col-12 col-md-6 col-lg-4">
@@ -192,8 +171,7 @@ export default function ShippingScreen() {
                 src="images/15.jpg"
                 class="figure-img img-fluid img-thumbnail"
                 alt="Figure image"
-            /></a>
- 
+            /></a> 
           </figure>
         </div>
         <div class="col-12 col-md-6 col-lg-4">
@@ -203,8 +181,7 @@ export default function ShippingScreen() {
                 src="images/16.jpg"
                 class="figure-img img-fluid img-thumbnail"
                 alt="Figure image"
-            /></a>
- 
+            /></a> 
           </figure>
         </div>
         <div class="col-12 col-md-6 col-lg-4">
@@ -214,8 +191,7 @@ export default function ShippingScreen() {
                 src="images/17.jpg"
                 class="figure-img img-fluid img-thumbnail"
                 alt="Figure image"
-            /></a>
- 
+            /></a> 
           </figure>
         </div>
         <div class="col-12 col-md-6 col-lg-4">
@@ -225,8 +201,7 @@ export default function ShippingScreen() {
                 src="images/18.jpg"
                 class="figure-img img-fluid img-thumbnail"
                 alt="Figure image"
-            /></a>
- 
+            /></a> 
           </figure>
         </div>
         <div class="col-12 col-md-6 col-lg-4">
@@ -236,8 +211,7 @@ export default function ShippingScreen() {
                 src="images/19.jpg"
                 class="figure-img img-fluid img-thumbnail"
                 alt="Figure image"
-            /></a>
- 
+            /></a> 
           </figure>
         </div>
         <div class="col-12 col-md-6 col-lg-4">
@@ -247,8 +221,7 @@ export default function ShippingScreen() {
                 src="images/20.jpg"
                 class="figure-img img-fluid img-thumbnail"
                 alt="Figure image"
-            /></a>
-         
+            /></a> 
           </figure>
         </div>
         <div class="col-12 col-md-6 col-lg-4">
@@ -258,8 +231,7 @@ export default function ShippingScreen() {
                 src="images/21.jpg"
                 class="figure-img img-fluid img-thumbnail"
                 alt="Figure image"
-            /></a>
- 
+            /></a> 
           </figure>
         </div>
         <div class="col-12 col-md-6 col-lg-4">
@@ -269,8 +241,7 @@ export default function ShippingScreen() {
                 src="images/22.jpg"
                 class="figure-img img-fluid img-thumbnail"
                 alt="Figure image"
-            /></a>
- 
+            /></a> 
           </figure>
         </div>
         <div class="col-12 col-md-6 col-lg-4">
@@ -280,8 +251,7 @@ export default function ShippingScreen() {
                 src="images/23.jpg"
                 class="figure-img img-fluid img-thumbnail"
                 alt="Figure image"
-            /></a>
- 
+            /></a> 
           </figure>
         </div>
         <div class="col-12 col-md-6 col-lg-4">
@@ -291,12 +261,10 @@ export default function ShippingScreen() {
                 src="images/24.jpg"
                 class="figure-img img-fluid img-thumbnail"
                 alt="Figure image"
-            /></a>
- 
+            /></a> 
           </figure>
         </div>
-      </div>
- 
+      </div> 
     </div> 
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
