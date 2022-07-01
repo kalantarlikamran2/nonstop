@@ -96,10 +96,9 @@ import {
               <Grid item md={6} xs={12}>
                 <Image
                   src={urlFor(product.image)}
-                  alt={product.name}
-                  layout="responsive"
-                  width={640}
-                  height={640}
+                  alt={product.name} 
+                  width={300}
+                  height={500}
                 />
               </Grid>
               <Grid item md={3} xs={12}>
@@ -112,9 +111,8 @@ import {
                   <ListItem>Category: {product.category}</ListItem>
                   <ListItem>Brand: {product.brand}</ListItem>
                   <ListItem>
-                    <Rating value={product.rating} readOnly></Rating>
-                    <Typography sx={classes.smallText}>
-                      ({product.numReviews} reviews)
+                  <Typography>{product.rating} panel</Typography>
+                    <Typography sx={classes.smallText}> 
                     </Typography>
                   </ListItem>
                   <ListItem>

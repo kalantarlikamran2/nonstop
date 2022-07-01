@@ -69,7 +69,12 @@ export default function Home() {
       ) : (
         <Grid container spacing={3}>
           {products.map((product) => (
-            <Grid item md={4} key={product.slug}> 
+            <Grid item md={3} key={product.slug}
+            container
+            spacing={0}
+            direction="column"
+            alignItems="center"
+            justify="center" > 
               <ProductItem
                 product={product}
                 addToCartHandler={addToCartHandler}

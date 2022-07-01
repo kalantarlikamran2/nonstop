@@ -212,7 +212,7 @@ export default function Layout({ title, description, children }) {
               </form>
             </Box>
 
-            <Box>
+            <Box sx={isDesktop ? classes.visible :{ width: '65%' }}>
               <Switch
                 checked={darkMode}
                 onChange={darkModeChangeHandler}
@@ -270,6 +270,13 @@ export default function Layout({ title, description, children }) {
                   <Link>Login</Link>
                 </NextLink>
               )}
+                 <NextLink href="/gallery" passHref>
+                  <Link>Gallery</Link>
+                </NextLink>
+                <NextLink href="/contact" passHref>
+                  <Link>Contact</Link>
+                </NextLink>
+                
             </Box>
           </Toolbar>
         </AppBar>

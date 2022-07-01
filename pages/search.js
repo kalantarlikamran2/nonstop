@@ -5,8 +5,7 @@ import {
     Grid,
     List,
     ListItem,
-    MenuItem,
-    Rating,
+    MenuItem, 
     Select,
     Typography,
   } from '@mui/material';
@@ -37,7 +36,32 @@ import {
     },
   ];
   
-  const ratings = [1, 2, 3, 4, 5];
+  const ratings = [
+    {
+      name: '1 panel',
+      value: '1',
+    },
+    {
+      name: '2 panel',
+      value: '2',
+    },
+    {
+      name: '3 panel',
+      value: '3',
+    },
+    {
+      name: '4 panel',
+      value: '4',
+    },
+    {
+      name: '5 panel',
+      value: '5',
+    },
+    {
+      name: '6 panel',
+      value: '6',
+    },
+  ];
   
   export default function SearchScreen() {
     const router = useRouter();
@@ -83,7 +107,7 @@ import {
             gQuery += ` && price >= ${minPrice} && price <= ${maxPrice}`;
           }
           if (rating !== 'all') {
-            gQuery += ` && rating >= ${Number(rating)} `;
+            gQuery += ` && rating == ${rating} `;
           }
           let order = '';
           if (sort !== 'default') {
@@ -166,11 +190,11 @@ import {
     return (
       <Layout title="search">
         <Grid sx={classes.section} container spacing={2}>
-          <Grid item md={3}>
+          <Grid item md={4} >
             <List>
               <ListItem>
                 <Box sx={classes.fullWidth}>
-                  <Typography>Categories</Typography>
+                  <Typography>  Categories</Typography>
                   <Select fullWidth value={category} onChange={categoryHandler}>
                     <MenuItem value="all">All</MenuItem>
                     {categories &&
@@ -180,11 +204,9 @@ import {
                         </MenuItem>
                       ))}
                   </Select>
-                </Box>
-              </ListItem>
-              <ListItem>
-                <Box sx={classes.fullWidth}>
-                  <Typography>Prices</Typography>
+                </Box> 
+                <Box sx={classes.fullWidth} >
+                  <Typography>  Prices</Typography>
                   <Select value={price} onChange={priceHandler} fullWidth>
                     <MenuItem value="all">All</MenuItem>
                     {prices.map((price) => (
@@ -193,17 +215,14 @@ import {
                       </MenuItem>
                     ))}
                   </Select>
-                </Box>
-              </ListItem>
-              <ListItem>
+                </Box> 
                 <Box sx={classes.fullWidth}>
-                  <Typography>Ratings</Typography>
+                  <Typography>  Panel</Typography>
                   <Select value={rating} onChange={ratingHandler} fullWidth>
                     <MenuItem value="all">All</MenuItem>
                     {ratings.map((rating) => (
-                      <MenuItem dispaly="flex" key={rating} value={rating}>
-                        <Rating value={rating} readOnly />
-                        <Typography component="span">&amp; Up</Typography>
+                      <MenuItem  key={rating.value} value={rating.value}>
+                        {rating.name}
                       </MenuItem>
                     ))}
                   </Select>
@@ -211,14 +230,14 @@ import {
               </ListItem>
             </List>
           </Grid>
-          <Grid item md={9}>
+          <Grid item md={12}>
             <Grid container justifyContent="space-between" alignItems="center">
               <Grid item>
                 {products && products.length !== 0 ? products.length : 'No'}{' '}
                 Results
                 {query !== 'all' && query !== '' && ' : ' + query}
                 {price !== 'all' && ' : Price ' + price}
-                {rating !== 'all' && ' : Rating ' + rating + ' & up'}
+                {rating !== 'all' && ' : Panel ' + rating  }
                 {(query !== 'all' && query !== '') ||
                 rating !== 'all' ||
                 price !== 'all' ? (
@@ -245,9 +264,14 @@ import {
               ) : error ? (
                 <Alert>{error}</Alert>
               ) : (
-                <Grid container spacing={3}>
+                <Grid container spacing={3} >
                   {products.map((product) => (
-                    <Grid item md={4} key={product.name}>
+                    <Grid item md={3} key={product.name} 
+                    container
+                    spacing={0}
+                    direction="column"
+                    alignItems="center"
+                    justify="center"  >
                       <ProductItem
                         product={product}
                         addToCartHandler={addToCartHandler}

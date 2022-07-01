@@ -14,17 +14,19 @@ import {
    
   export default function ProductItem({ product, addToCartHandler }) {
     return (
-      <Card>
+      <Card sx={{ maxWidth: 220 }}>
         <NextLink href={`/product/${product.slug.current}`} passHref>
           <CardActionArea>
-            <CardMedia
+            <CardMedia 
               component="img"
+              height="450"
+              weight="90" 
               image={urlForThumbnail(product.image)}
               title={product.name}
             ></CardMedia>
             <CardContent>
               <Typography>{product.name}</Typography>
-              <Rating value={product.rating} readOnly></Rating>
+              <Typography>{product.rating} panel</Typography>
             </CardContent>
           </CardActionArea>
         </NextLink>
